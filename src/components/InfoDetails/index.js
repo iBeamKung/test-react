@@ -31,7 +31,7 @@ const InfoDetails = () => {
         "recovered":0
     });
 
-    const url = 'overall.json';
+    const url = 'http://45.150.128.22:8000/overall';
     useEffect(() => {
         axios.get(url)
           .then(response => {
