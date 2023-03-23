@@ -33,7 +33,7 @@ const InfoDetails = () => {
 
     const url = 'http://45.150.128.22:8000/overall';
     useEffect(() => {
-        axios.get(url)
+        axios.get(url,{mode: 'no-cors'})
           .then(response => {
             console.log(response);
             setData(response.data);
