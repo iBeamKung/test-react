@@ -31,7 +31,7 @@ const InfoDetails = () => {
         "recovered":0
     });
 
-    const url = 'http://45.150.128.22:8000/overall';
+    const url = 'https://netipat.dev:8000/overall';
     useEffect(() => {
         axios.get(url,{mode: 'no-cors'})
           .then(response => {
